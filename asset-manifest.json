@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/milstone.space/static/css/main.582969b1.css",
-    "main.js": "/milstone.space/static/js/main.419d669f.js",
+    "main.css": "/milstone.space/static/css/main.067bf9a0.css",
+    "main.js": "/milstone.space/static/js/main.5884c4b5.js",
     "static/media/Captureit.ttf": "/milstone.space/static/media/Captureit.975dd944ac41a2e235fa.ttf",
-    "static/media/ardarling.ttf": "/milstone.space/static/media/ardarling.9066e14bd694bc64447c.ttf",
     "static/media/bgtr4.png": "/milstone.space/static/media/bgtr4.6ac37f98a80d7fd06d5f.png",
     "static/media/bgtr3.png": "/milstone.space/static/media/bgtr3.66f9a522d050ece870c9.png",
     "static/media/bgtr2.png": "/milstone.space/static/media/bgtr2.f6205703f51135263035.png",
     "static/media/bgtr.png": "/milstone.space/static/media/bgtr.7ccd4c075d6ce646052b.png",
+    "static/media/Stencil.ttf": "/milstone.space/static/media/Stencil.9b1f30bb93ba82d630d0.ttf",
     "static/media/Blackout.ttf": "/milstone.space/static/media/Blackout.e4b787f9d1993c0beb95.ttf",
     "static/media/slick.svg": "/milstone.space/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/milstone.space/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/milstone.space/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/milstone.space/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/milstone.space/index.html",
-    "main.582969b1.css.map": "/milstone.space/static/css/main.582969b1.css.map",
-    "main.419d669f.js.map": "/milstone.space/static/js/main.419d669f.js.map"
+    "main.067bf9a0.css.map": "/milstone.space/static/css/main.067bf9a0.css.map",
+    "main.5884c4b5.js.map": "/milstone.space/static/js/main.5884c4b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.582969b1.css",
-    "static/js/main.419d669f.js"
+    "static/css/main.067bf9a0.css",
+    "static/js/main.5884c4b5.js"
   ]
 }
