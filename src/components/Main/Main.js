@@ -61,8 +61,6 @@ export const Main = () => {
                     </h3>
                 </div>
 
-
-
                 <div className='main__manifest'>
                     <Link
                         to='/services/delivery/compact'
@@ -126,7 +124,6 @@ export const Main = () => {
                     >
                         Більше пропозицій
                     </Link>
-
                 </div>
             </div>
 
@@ -136,7 +133,7 @@ export const Main = () => {
                 </h2>
 
                 <Slider {...settings}>
-                    <div className='test__slide'>
+                    <div className='testgit __slide'>
                         <div className='test__slide-info'>
                             <img src="../../images/lake.jpg" />
                             <h2 className='test__slide-subtitle'>
