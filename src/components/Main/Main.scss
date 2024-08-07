@@ -1,0 +1,255 @@
+.main {
+    &__wrapper {
+        min-height: calc(100vh - 90px);
+        width: 100%;
+        background: url('../../images/bgtr2.png') no-repeat 50% 50%;
+        background-attachment: fixed;
+        background-size: cover;
+        box-shadow: 0 0 75px 0 rgba(0, 0, 0, 0.64) inset;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__welcome {
+        padding-left: 12px;
+
+        &-title,
+        &-subtitle {
+            color: white;
+            opacity: 0;
+            text-shadow: 0 0 4px black;
+        }
+
+        &-title {
+            margin: 20px 0 0;
+            font-size: calc(24px + 4vmin);
+            animation: textLoading 1.2s alternate 1.2s forwards;
+        }
+
+        &-subtitle {
+            margin-top: 20px;
+            font-size: 4vmin;
+            animation: textLoading 2.4s alternate 2.4s forwards;
+        }
+    }
+
+    &__timebox {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(to bottom, rgba(0, 87, 183, 0.44) 50%, rgba(255, 215, 0, 0.44) 50%);
+        color: rgba(0, 0, 0, 0.24);
+        padding: 20px;
+        letter-spacing: 4px;
+        text-align: center;
+        font-size: 64px
+    }
+
+    &__manifest {
+        width: 100%;
+        padding: 8px;
+        margin-top: auto;
+        display: grid;
+        column-gap: 8px;
+        row-gap: 4px;
+        grid-template-columns: repeat(3, 1fr);
+
+        &-button {
+            font-size: calc(2.4vmin);
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            padding: 8px 4px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 4px;
+            border: none;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:last-child {
+                border: 2px solid white;
+                color: white;
+                background-color: rgba(0,0,0,0.12);
+                // background-color: rgba(255, 255, 255, 0.32);
+
+                &:hover {
+                    color: black;
+                }
+            }
+
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+
+            &:active {
+                transform: translateY(2px);
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+        }
+    }
+
+    &__subtitle {
+        font-size: calc(4vmin);
+    }
+
+    &__button {}
+}
+
+.test {
+    &__wrapper {
+        flex-direction: column;
+        padding: 0 40px;
+        min-height: 100vh;
+        width: 100%;
+        background-color: lightgreen;
+    }
+
+    &__title {
+        color: white;
+        text-align: center;
+        text-shadow: 0 0 4px black;
+        font-size: calc(20px + 4vmin);
+        margin: 0 0 20px;
+    }
+
+    &__slider {
+        width: 100%;
+
+        background-color: rgba(0, 0, 0, 0.36);
+        border-radius: 4px;
+    }
+
+    &__slide {
+        color: white;
+        width: 100%;
+        padding: 10px;
+        // border: 5px solid gold;
+
+        &-info {
+            min-height: 50vh;
+            // border: 5px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-subtitle {
+            height: 60px;
+            text-align: center;
+        }
+
+        &-description {
+            overflow-y: scroll;
+            /* Додаємо вертикальну смугу прокрутки */
+
+            &::-webkit-scrollbar {
+                width: 12px;
+                /* Ширина смуги прокрутки */
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                /* Колір треку (фону) смуги прокрутки */
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: linear-gradient(45deg, #ffd700, #00bfff);
+                /* Градієнт для смуги прокрутки */
+                border-radius: 6px;
+                /* Закруглені краї */
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: linear-gradient(45deg, #ffa500, #1e90ff);
+                /* Зміна кольору при наведенні */
+            }
+
+            &::-webkit-scrollbar-thumb:active {
+                background: linear-gradient(45deg, #ff8c00, #4682b4);
+                /* Зміна кольору при активному стані */
+            }
+
+            background-color: rgba(0, 0, 0, 0.12);
+            padding: 8px 20px;
+            height: 200px;
+            overflow-y: scroll;
+        }
+
+        & img {
+            width: 100%;
+            border-radius: 4px;
+            aspect-ratio: 2/1;
+        }
+
+        &-buttons {
+            // margin: auto;
+            // display: grid;
+            // column-gap: 8px;
+            // grid-template-columns: repeat(3, 1fr);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            gap: 8px;
+            margin: 12px 0 0;
+        }
+
+        &-button {
+            // border: 2px solid lightgreen;
+            // border-radius: 4px;
+            // padding: 8px 0;
+            // text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+
+            &:hover {
+                background-color: #0056b3;
+                transform: translateY(-2px);
+            }
+
+            &:active {
+                background-color: #004085;
+                transform: translateY(0);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .test {
+        &__slide {
+            min-height: 80vh;
+        }
+    }
+}
+
+@keyframes textLoading {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes buttonScaling {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}

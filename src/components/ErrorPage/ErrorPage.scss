@@ -1,0 +1,22 @@
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 8px 16px;
+    background-color: #388E3C;
+
+    &__title {
+        margin: -60px 0 10px;
+        font-size: 10vmin;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-size: 4vmin;
+        text-align: center;
+        margin: 0;
+    }
+}

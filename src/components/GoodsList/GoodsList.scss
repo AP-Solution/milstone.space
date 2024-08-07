@@ -1,0 +1,120 @@
+.goods {
+  &__filter {
+    display: grid;
+    grid-template-columns: auto 1fr 3fr;
+    gap: 8px;
+    align-items: center;
+    margin: 0 0 12px;
+
+    &-search {
+      position: relative;
+
+      &::before {
+        content: '🔍';
+        position: absolute;
+        font-size: 20px;
+        display: grid;
+        place-items: center;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        aspect-ratio: 1 / 1;
+      }
+    }
+
+    &-input {
+      padding: 12px 4px;
+      width: 100%;
+
+      &::before {
+        content: '🔍';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    &-title {
+      margin: 0;
+      white-space: nowrap;
+      font-size: 24px;
+    }
+
+    &-select {
+      padding: 12px 4px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 8px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.2);
+
+    &-image {
+      aspect-ratio: 1 / 1;
+    }
+
+    &-price {
+      margin: 0 0 20px;
+    }
+
+    &-actions {
+      margin: auto 0 0;
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-button {
+      padding: 8px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s transform;
+
+      &:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+      }
+
+      &:first-child {
+        background-color: #001f3f;
+      }
+
+      &:last-child {
+        background-color: green;
+      }
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .goods {
+    &__wrapper {
+      padding: 0 8px 20px;
+    }
+    &__filter {
+      grid-template-columns: repeat(2, 1fr);
+      &-search {
+        grid-column: 1 / 3;
+      }
+      &-title {
+        font-size: calc(10px + 2.5vmin);
+      }
+    }
+  }
+}

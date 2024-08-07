@@ -1,0 +1,33 @@
+.dobrodiya {
+    &__wrapper {
+        color: white;
+        text-shadow: 0 0 12px black;
+        min-height: 100vh;
+        background: url('../../images/bgtr4.png') no-repeat 50% 50%;
+        background-size: cover;
+        box-shadow: 0 0 75px 0 rgba(0,0,0,0.64) inset;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        text-decoration: underline;
+        margin: 16px 0;
+        font-size: calc(32px + 4vmin);
+    }
+
+    &__text {
+        width: 100%;
+        font-size: calc(0px + 4vmin);
+    }
+
+    &__list {
+        & a {
+            color: green;
+            text-decoration: none;
+        }
+    }
+}

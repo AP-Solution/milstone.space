@@ -1,0 +1,186 @@
+.single-good-page {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 8px 16px;
+    background-color: #388E3C;
+
+    &__strong {
+        color: gold;
+        margin: 0 4px 0 0;
+    }
+
+    &__wrapper {
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 8px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title,
+    &__subtitle {
+        text-align: left;
+        margin: 12px 0;
+    }
+
+    &__title {
+        font-size: 6vmin;
+        margin: 24px 0 0;
+    }
+
+    &__subtitle {
+        font-size: calc(10px + 2vmin);
+    }
+
+    &__info {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.12);
+        padding: 8px 32px;
+    }
+
+    &__description {
+        text-align: left;
+        width: 50%;
+        margin-left: auto;
+        padding: 0 0 0 36px;
+    }
+
+    &__table {
+        width: 100%;
+        margin: 0 0 12px;
+        border-collapse: collapse;
+
+        &-row {
+            &:nth-child(2n-1) {
+                background-color: rgba(0, 0, 0, 0.24);
+            }
+        }
+
+        &-cell {
+            padding: 4px;
+
+            &:nth-child(2n) {
+                text-align: right;
+            }
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+    &__gathering {
+        height: 40px;
+        display: flex;
+        column-gap: 8px;
+        align-items: center;
+
+        &-title {
+            height: 100%;
+            background-color: lightgreen;
+            box-shadow: 0 0 40px 0px rgba(0,0,0,0.36) inset;
+            border: 2px solid gold;
+            margin: 0 px;
+            padding: 0 16px;
+            font-size: 24px;
+            white-space: nowrap;
+        }
+
+        &-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        &-progress {
+            width: 100%;
+            height: 100%;
+            // Я хз как этот БР убрать чтоб ничего не сломалось. Разберемся позже
+            border-radius: 0;
+
+            &::-webkit-progress-value {
+                background-color: gold;
+            }
+
+            &::-webkit-progress-bar {
+                background-color: white;
+            }
+
+            &__value {
+                color: black;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                font-size: 24px;
+                display: grid;
+                place-items: center;
+            }
+        }
+    }
+}
+
+
+
+.slider {
+    width: 50%;
+    float: left;
+
+    &__1 {
+        &-slide {
+            padding: 0 8px;
+        }
+
+        &-image {
+            width: 100%;
+        }
+    }
+
+    &__2 {
+        &-slide {
+            padding: 8px;
+        }
+
+        &-image {
+            max-height: 12vh;
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .slider {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .single-good-page {
+        &__description {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .slider {
+        &__2 {
+            display: none;
+        }
+    }
+
+    .single-good-page {
+        &__gathering {
+            &-progress {
+                &__value {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
