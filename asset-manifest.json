@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/milstone.space/static/css/main.067bf9a0.css",
-    "main.js": "/milstone.space/static/js/main.b05adf89.js",
+    "main.css": "/milstone.space/static/css/main.548916d7.css",
+    "main.js": "/milstone.space/static/js/main.38725c39.js",
     "static/media/Captureit.ttf": "/milstone.space/static/media/Captureit.975dd944ac41a2e235fa.ttf",
     "static/media/bgtr4.png": "/milstone.space/static/media/bgtr4.6ac37f98a80d7fd06d5f.png",
     "static/media/bgtr3.png": "/milstone.space/static/media/bgtr3.66f9a522d050ece870c9.png",
@@ -14,11 +14,11 @@
     "static/media/slick.ttf": "/milstone.space/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/milstone.space/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/milstone.space/index.html",
-    "main.067bf9a0.css.map": "/milstone.space/static/css/main.067bf9a0.css.map",
-    "main.b05adf89.js.map": "/milstone.space/static/js/main.b05adf89.js.map"
+    "main.548916d7.css.map": "/milstone.space/static/css/main.548916d7.css.map",
+    "main.38725c39.js.map": "/milstone.space/static/js/main.38725c39.js.map"
   },
   "entrypoints": [
-    "static/css/main.067bf9a0.css",
-    "static/js/main.b05adf89.js"
+    "static/css/main.548916d7.css",
+    "static/js/main.38725c39.js"
   ]
 }
